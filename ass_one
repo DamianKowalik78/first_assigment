@@ -1,0 +1,23 @@
+
+# Collections
+student_tuple = ('L12345', 'L54321')
+module_tuple = {'Java_ooprogramming', 'Python_Scripting'}
+
+# Dictionaries
+Java_ooprogramming_grades = {'L12345': 40, 'L54321': 70}
+Python_Scripting_grades = {'L12345': 69, 'L54321': 58}
+
+for i in range(len(student_tuple)):
+    # Java process
+    print(f'Printing data for Java')
+    for x in range(len(Java_ooprogramming_grades)):
+        if list(Java_ooprogramming_grades.keys())[x] == student_tuple[i]:
+            print(
+                f'Student {student_tuple[i]} has a grade in Java {list(Java_ooprogramming_grades.values())[x]}')
+
+    # Python process
+    print(f'Printing data for Python')
+    for x in range(len(Python_Scripting_grades)):
+        if list(Python_Scripting_grades.keys())[x] == student_tuple[i]:
+            print(f'Student {student_tuple[i]} has a grade in Python '
+                  f'{list(Python_Scripting_grades.values())[x]}')
